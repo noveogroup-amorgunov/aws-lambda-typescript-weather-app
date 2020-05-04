@@ -1,0 +1,22 @@
+service: aws-lambda-typescript-weather-app
+
+plugins:
+  - serverless-plugin-typescript
+  - serverless-dotenv-plugin
+  - serverless-offline
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: dev
+  region: us-east-2
+  environment:
+    WEATHERSTACK_API_KEY: ${env:WEATHERSTACK_API_KEY}
+
+functions:
+  getWeather:
+    handler: src/getWeather.handler
+    events:
+      - http:
+          path: /weather/{city}/current
+          method: get

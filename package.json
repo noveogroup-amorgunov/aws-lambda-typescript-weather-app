@@ -1,0 +1,39 @@
+{
+  "name": "aws-lambda-typescript-weather-app",
+  "version": "1.0.0",
+  "description": "Weather APP on TypeScript + AWS Lambda",
+  "main": "index.js",
+  "scripts": {
+    "local": "sls offline start",
+    "deploy": "sls deploy",
+    "test": "jest"
+  },
+  "keywords": [
+    "aws lambda",
+    "typescript",
+    "weather-app"
+  ],
+  "author": "Alexander Morgunov",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/aws-lambda": "8.10.51",
+    "@types/axios": "0.14.0",
+    "@types/jest": "25.2.1",
+    "@types/node": "13.13.4",
+    "jest": "25.5.4",
+    "serverless": "1.69.0",
+    "serverless-dotenv-plugin": "2.4.2",
+    "serverless-offline": "6.1.4",
+    "serverless-plugin-typescript": "1.1.9",
+    "ts-jest": "25.4.0",
+    "typescript": "3.8.3"
+  },
+  "dependencies": {
+    "axios": "0.19.2"
+  },
+  "jest": {
+    "transform": {
+      ".+\\.tsx?$": "ts-jest"
+    }
+  }
+}
