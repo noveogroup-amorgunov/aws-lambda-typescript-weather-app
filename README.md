@@ -1,6 +1,6 @@
 # aws-lambda-typescript-weather-app
 
-Example of using **AWS Lambda** + **Typescript** for Weather APP. You can read [step-by-step post about it](https://amorgunov.com/posts/2020-05-03-using-aws-lambda-with-typescript/).
+Example of using **AWS Lambda** + **Typescript** for Weather APP. You can read [step-by-step post about it](https://amorgunov.com/posts/2020-05-07-using-aws-lambda-with-typescript/).
 
 ## Setup
 
